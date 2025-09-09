@@ -1,0 +1,24 @@
+name: ✨ Feature Request
+description: Suggest an enhancement for the RWA Management System
+title: "[FEATURE]: <feature name>"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Feature Request for RWA Management
+        Explain how this feature would benefit asset management
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      placeholder: |
+        The feature would allow users to...
+        This is important because...
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      placeholder: |
+        This would be used when...
+        Typical users would be...

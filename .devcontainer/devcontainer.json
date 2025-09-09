@@ -1,0 +1,56 @@
+{
+  "name": "ICP Vibe Coding Dev",
+  "image": "ghcr.io/dfinity/icp-dev-env:latest",
+  "forwardPorts": [4943, 5173, 11434],
+  "portsAttributes": {
+    "4943": {
+      "label": "dfx",
+      "onAutoForward": "ignore"
+    },
+    "5173": {
+      "label": "vite",
+      "onAutoForward": "openBrowser"
+    },
+    "11434": {
+      "label": "ollama",
+      "onAutoForward": "notify"
+    }
+  },
+  "onCreateCommand": "chmod +x scripts/dev-container-setup.sh",
+  "postCreateCommand": "./scripts/dev-container-setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "tamasfe.even-better-toml",
+        "dfinity-foundation.vscode-motoko",
+        "motoko-lsp-client.motoko-lsp-client",
+        "bradlc.vscode-tailwindcss"
+      ],
+      "settings": {
+        "chat.promptFiles": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "files.associations": {
+          "*.css": "tailwindcss"
+        },
+        "editor.quickSuggestions": {
+          "strings": "on"
+        },
+        "settingsSync.ignoredExtensions": ["*"]
+      },
+      "codespaces": {
+        "repositories": {
+          "*": {
+            "installRecommendedExtensions": false
+          }
+        }
+      }
+    }
+  },
+
+  "features": {},
+  "mounts": []
+}

@@ -8,7 +8,7 @@ High-value assets like land, buildings, businesses, and art often face issues su
 
 See This Page For Further Problem Case: https://ancientsclupture.github.io/Ownership-Chain/
 
-### Target Solution
+### Target Solution - Alek
 The problem is addressed through tokenization of real-world assets using Internet Computer Protocol (ICP) technology. This solution aims to:
 
 - **Secure ownership data** by recording it on an immutable blockchain, protecting it from manipulation or forgery.
